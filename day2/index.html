@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        <meta charsets="UTF-8"/>
+        <meta name-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <head>
+        <body>
+            <div class="container">
+                <h1>Registration Form</h1>
+                <form action="registration.php" method="POST">
+                <label>
+                    Full Name:
+                    <br>
+                    <input type="text" id="txtName" name="fullname" required
+                    placeholder="Enter your Full Name"/>
+                </label>
+                <br>
+                <lable>
+                    Email Address:
+                    <br>
+                    <input type="email" id="txtEmail" name="email" required
+                    placeholder="Enter Email Address"/>
+                </lable>
+                <br>
+                <div class="row">
+                    <div class="column">
+                   <lable>
+                    Phone Number: </lable><br>
+                    <input type="text" id="txtPhone" name="phone" required
+                    placeholder="Enter Phone Number"/>
+                   </div>
+                   <div class="column">
+                    Birth Date:<br>
+                        <input type="date" id="txtDOB" name="dob" required
+                        placeholder="Enter Birth Date"/>
+                    </div>
+                    </div>
+                <br>
+                <label>
+                    Gender:</label><div class="gender">
+                     <input type="radio" id="check-male" name="gender" checked/>
+                    <label form="check-male">Male</label>
+
+                    <input type="radio" id="check-female" name="gender" checked/>
+                    <label form="check-female">Female</label>
+
+                    <input type="radio" id="check-transgender" name="gender" checked/>
+                    <label form="check-transgender">Transgender</label>
+
+                    <input type="radio" id="check-prefer not to say" name="gender" checked/>
+                    <label form="check-prefer not to say">Prefer not to say</label>
+                    </div>
+                <div>
+                <label>
+                    Address: <br>
+                    <input type="txt" name="address1" id="txtAddress" required
+                    placeholder="Enter Street Address"/> 
+                    <br>
+                    <input type="txt" name="address2" id="txtAddress" required
+                    placeholder="Enter Street Address line 2"/>
+                    <br>
+                    <select name="CountryName">
+                        <option value="India">India</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Canada">Canada</option>
+                        <option value="US">US</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Germany">Germany</option>
+                        <option value="England">England</option>
+                        <option value="Denmark">Denmark</option>
+                    </select>
+                    <input type="text" id="txtCity" name="city" required
+                    placeholder="Enter Your City"/>
+                    <br>
+                    <input type="text" id="txtRegion" name="region" required
+                    placeholder="Enter Your Region"/>
+                    <input type="text" id="txtpcode" name="pincode" required
+                    placeholder="Enter Postal Code"/>
+                    <br><br>
+            <div>
+                <button>Submit</button>
+            </div>
+            </form>
+        </body>
+    </head>
